@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEC'25 Recruitment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+        <div class="header">
+          
+            <h1>APEC'25</h1>
+            <h2> RECRUITMENT</h2>
+        </div>
+     
+<div class="container">
+        <form class="recruitment-form">
+            <label for="name" class="name">Name:</label>
+            <input type="text" class="aaaa" placeholder="Enter your name" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="university">University:</label>
+            <select id="university" name="university" required>
+                <option value="">Choose University</option>
+                <option value="">Ain Shams</option>
+                <option value="">Cairo</option>
+                <option value="">Helwan</option>
+                <option value="">others</option>
+            </select>
+
+            <label for="faculty">Faculty:</label>
+            <select id="faculty" name="faculty" required required onchange="updateyear()">
+                <option value="">Choose Faculty</option>
+                <option value="eng"> Engineering</option>
+                <option value="med">Medicine</option>
+                <option value="pha">Pharmacy</option>
+                <option value="commerce">Commerce</option>
+                <option value="applied">Applied Arts</option>
+                <option value="mass">Mass Communication</option>
+                <option value="comp">Computer Science</option>
+                <option value="others">others</option>
+            </select>
+
+            <label for="year">Academic Year:</label>
+           
+                <select id="year" name="year" required>
+                    <option value="">your year</option>
+                </select>
+
+            
+
+            <label for="experience">Write your previous experience:</label>
+            <textarea id="experience" name="experience" rows="4" placeholder="Write here..."></textarea>
+
+            <div class="button-group">
+                <button type="button" onclick="goBack()">Back</button>
+                <button type="submit">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
